@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1207BFA920068C9700E94C70 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207BFA820068C9700E94C70 /* RewardViewController.swift */; };
+		1207BFAB2006D21900E94C70 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207BFAA2006D21800E94C70 /* Swift+Gif.swift */; };
+		1207BFAD2006D4F600E94C70 /* SmallBombGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1207BFAC2006D4F500E94C70 /* SmallBombGif.gif */; };
+		12102E4E2027A60A00599115 /* Boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12102E4D2027A60A00599115 /* Boom.mp3 */; };
+		12102E542028970B00599115 /* ObamaClaps.gif in Resources */ = {isa = PBXBuildFile; fileRef = 12102E532028970B00599115 /* ObamaClaps.gif */; };
+		12102E562028972800599115 /* Leo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 12102E552028972800599115 /* Leo.gif */; };
+		124D0370202BAFCF0067BEF6 /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D036F202BAFCF0067BEF6 /* StreakViewController.swift */; };
+		126AC61820123C1E00767129 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AC61720123C1E00767129 /* MenuViewController.swift */; };
 		12A3CF411FE9B07E00EE9B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3CF401FE9B07E00EE9B2E /* AppDelegate.swift */; };
 		12A3CF431FE9B07E00EE9B2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3CF421FE9B07E00EE9B2E /* ViewController.swift */; };
 		12A3CF461FE9B07E00EE9B2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A3CF441FE9B07E00EE9B2E /* Main.storyboard */; };
@@ -14,6 +22,9 @@
 		12A3CF4B1FE9B07E00EE9B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A3CF491FE9B07E00EE9B2E /* LaunchScreen.storyboard */; };
 		12A3CF561FE9B07E00EE9B2E /* CharismaOnCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3CF551FE9B07E00EE9B2E /* CharismaOnCommandTests.swift */; };
 		12A3CF611FE9B07E00EE9B2E /* CharismaOnCommandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3CF601FE9B07E00EE9B2E /* CharismaOnCommandUITests.swift */; };
+		12AC8CE620094AB300D40FBF /* Victory.gif in Resources */ = {isa = PBXBuildFile; fileRef = 12AC8CE520094AB300D40FBF /* Victory.gif */; };
+		12AC8CE820094ABB00D40FBF /* Failed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 12AC8CE720094ABB00D40FBF /* Failed.gif */; };
+		12F13868201DE7EE00E24BAB /* MissionAccomplished.gif in Resources */ = {isa = PBXBuildFile; fileRef = 12F13867201DE7EC00E24BAB /* MissionAccomplished.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1207BFA820068C9700E94C70 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		1207BFAA2006D21800E94C70 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		1207BFAC2006D4F500E94C70 /* SmallBombGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = SmallBombGif.gif; path = Images/SmallBombGif.gif; sourceTree = SOURCE_ROOT; };
+		12102E4D2027A60A00599115 /* Boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Boom.mp3; path = Images/Boom.mp3; sourceTree = SOURCE_ROOT; };
+		12102E532028970B00599115 /* ObamaClaps.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ObamaClaps.gif; sourceTree = SOURCE_ROOT; };
+		12102E552028972800599115 /* Leo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Leo.gif; sourceTree = SOURCE_ROOT; };
+		124D036F202BAFCF0067BEF6 /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
+		126AC61720123C1E00767129 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		12A3CF3D1FE9B07E00EE9B2E /* CharismaOnCommand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharismaOnCommand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A3CF401FE9B07E00EE9B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A3CF421FE9B07E00EE9B2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,9 @@
 		12A3CF5C1FE9B07E00EE9B2E /* CharismaOnCommandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharismaOnCommandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A3CF601FE9B07E00EE9B2E /* CharismaOnCommandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharismaOnCommandUITests.swift; sourceTree = "<group>"; };
 		12A3CF621FE9B07E00EE9B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12AC8CE520094AB300D40FBF /* Victory.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Victory.gif; sourceTree = SOURCE_ROOT; };
+		12AC8CE720094ABB00D40FBF /* Failed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Failed.gif; sourceTree = SOURCE_ROOT; };
+		12F13867201DE7EC00E24BAB /* MissionAccomplished.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MissionAccomplished.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +121,18 @@
 			children = (
 				12A3CF401FE9B07E00EE9B2E /* AppDelegate.swift */,
 				12A3CF421FE9B07E00EE9B2E /* ViewController.swift */,
+				124D036F202BAFCF0067BEF6 /* StreakViewController.swift */,
+				126AC61720123C1E00767129 /* MenuViewController.swift */,
+				1207BFA820068C9700E94C70 /* RewardViewController.swift */,
+				1207BFAA2006D21800E94C70 /* Swift+Gif.swift */,
 				12A3CF441FE9B07E00EE9B2E /* Main.storyboard */,
+				12F13867201DE7EC00E24BAB /* MissionAccomplished.gif */,
+				12AC8CE520094AB300D40FBF /* Victory.gif */,
+				12102E552028972800599115 /* Leo.gif */,
+				12102E532028970B00599115 /* ObamaClaps.gif */,
+				12AC8CE720094ABB00D40FBF /* Failed.gif */,
+				1207BFAC2006D4F500E94C70 /* SmallBombGif.gif */,
+				12102E4D2027A60A00599115 /* Boom.mp3 */,
 				12A3CF471FE9B07E00EE9B2E /* Assets.xcassets */,
 				12A3CF491FE9B07E00EE9B2E /* LaunchScreen.storyboard */,
 				12A3CF4C1FE9B07E00EE9B2E /* Info.plist */,
@@ -232,9 +265,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12102E4E2027A60A00599115 /* Boom.mp3 in Resources */,
 				12A3CF4B1FE9B07E00EE9B2E /* LaunchScreen.storyboard in Resources */,
 				12A3CF481FE9B07E00EE9B2E /* Assets.xcassets in Resources */,
+				12102E542028970B00599115 /* ObamaClaps.gif in Resources */,
+				12102E562028972800599115 /* Leo.gif in Resources */,
 				12A3CF461FE9B07E00EE9B2E /* Main.storyboard in Resources */,
+				12AC8CE620094AB300D40FBF /* Victory.gif in Resources */,
+				1207BFAD2006D4F600E94C70 /* SmallBombGif.gif in Resources */,
+				12F13868201DE7EE00E24BAB /* MissionAccomplished.gif in Resources */,
+				12AC8CE820094ABB00D40FBF /* Failed.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1207BFAB2006D21900E94C70 /* Swift+Gif.swift in Sources */,
+				126AC61820123C1E00767129 /* MenuViewController.swift in Sources */,
 				12A3CF431FE9B07E00EE9B2E /* ViewController.swift in Sources */,
 				12A3CF411FE9B07E00EE9B2E /* AppDelegate.swift in Sources */,
+				124D0370202BAFCF0067BEF6 /* StreakViewController.swift in Sources */,
+				1207BFA920068C9700E94C70 /* RewardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +473,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZD8KEFM8T;
 				INFOPLIST_FILE = CharismaOnCommand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GingerTech.CharismaOnCommand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GingerTech.CharismaOnCommand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,8 +489,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZD8KEFM8T;
 				INFOPLIST_FILE = CharismaOnCommand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GingerTech.CharismaOnCommand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GingerTech.CharismaOnCommand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

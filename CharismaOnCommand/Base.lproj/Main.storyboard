@@ -1,24 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IGf-CI-tPV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Optima.ttc">
+            <string>Optima-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="w8B-PY-Fnf">
+            <objects>
+                <viewController id="IGf-CI-tPV" customClass="MenuViewController" customModule="CharismaOnCommand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFb-8m-R8t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People_Talking" translatesAutoresizingMaskIntoConstraints="NO" id="MJb-Ul-mtC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CharismaOnCommandLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CFL-ZX-8ot">
+                                <rect key="frame" x="80" y="0.0" width="215" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="fDX-Jb-rgz"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8o0-dT-BF5">
+                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2s-P1-bd7">
+                                <rect key="frame" x="319" y="40" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4dx-1h-7mJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="aIH-Aa-tv3"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Envelope"/>
+                                <connections>
+                                    <action selector="FeedbackForm:" destination="IGf-CI-tPV" eventType="touchUpInside" id="8M1-XI-qKo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8o0-dT-BF5" firstAttribute="top" secondItem="CFL-ZX-8ot" secondAttribute="bottom" constant="8" symbolic="YES" id="4jw-64-Jlq"/>
+                            <constraint firstItem="VpU-X0-CNA" firstAttribute="trailing" secondItem="M2s-P1-bd7" secondAttribute="trailing" constant="16" id="9Rn-tY-G03"/>
+                            <constraint firstItem="MJb-Ul-mtC" firstAttribute="leading" secondItem="uFb-8m-R8t" secondAttribute="leading" id="JxS-RZ-PEj"/>
+                            <constraint firstAttribute="trailing" secondItem="MJb-Ul-mtC" secondAttribute="trailing" id="Ltj-id-FgF"/>
+                            <constraint firstItem="8o0-dT-BF5" firstAttribute="bottom" secondItem="VpU-X0-CNA" secondAttribute="bottom" id="Vpt-Ha-1KF"/>
+                            <constraint firstItem="MJb-Ul-mtC" firstAttribute="top" secondItem="uFb-8m-R8t" secondAttribute="top" id="X8p-Ma-qGK"/>
+                            <constraint firstItem="MJb-Ul-mtC" firstAttribute="bottom" secondItem="8o0-dT-BF5" secondAttribute="bottom" id="d0H-er-p7E"/>
+                            <constraint firstItem="CFL-ZX-8ot" firstAttribute="centerX" secondItem="MJb-Ul-mtC" secondAttribute="centerX" id="fhe-7D-pce"/>
+                            <constraint firstItem="M2s-P1-bd7" firstAttribute="top" secondItem="VpU-X0-CNA" secondAttribute="top" constant="20" id="hNd-8L-qZo"/>
+                            <constraint firstItem="MJb-Ul-mtC" firstAttribute="trailing" secondItem="8o0-dT-BF5" secondAttribute="trailing" id="lNB-bD-sPk"/>
+                            <constraint firstItem="MJb-Ul-mtC" firstAttribute="leading" secondItem="8o0-dT-BF5" secondAttribute="leading" id="pSU-2e-eel"/>
+                            <constraint firstItem="MJb-Ul-mtC" firstAttribute="top" secondItem="CFL-ZX-8ot" secondAttribute="top" id="yiI-Yr-zFZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VpU-X0-CNA"/>
+                    </view>
+                    <connections>
+                        <outlet property="ScrollView" destination="8o0-dT-BF5" id="hXH-Ao-Vm2"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ToHabitLoopView" id="eyB-b8-rYI"/>
+                        <segue destination="RYG-7e-gr6" kind="show" identifier="JumpToPendingView" id="M6C-0R-I2L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5B4-Ln-4I4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719.20000000000005" y="133.5832083958021"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CharismaOnCommand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People_Talking" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-kC-Wr1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDt-5M-Ls3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfT-9Z-TW2">
+                                        <rect key="frame" x="0.0" y="208" width="375" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Os2-c2-NZS"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CharismaOnCommandLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UTA-EH-fd1">
+                                        <rect key="frame" x="79.5" y="0.0" width="215" height="132"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="132" id="FKz-3Z-38b"/>
+                                            <constraint firstAttribute="width" constant="215" id="S4J-Ws-vdl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6S-QY-wKi">
+                                        <rect key="frame" x="158" y="578" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Mj7-gc-oOG"/>
+                                            <constraint firstAttribute="width" constant="60" id="U9t-sR-NxB"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Exit Icon">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="IGf-CI-tPV" kind="show" id="Eq9-SC-JuG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OfT-9Z-TW2" firstAttribute="centerX" secondItem="FDt-5M-Ls3" secondAttribute="centerX" id="7V2-B4-iCm"/>
+                                    <constraint firstItem="OfT-9Z-TW2" firstAttribute="leading" secondItem="FDt-5M-Ls3" secondAttribute="leading" id="9kb-Ms-qv9"/>
+                                    <constraint firstAttribute="bottom" secondItem="OfT-9Z-TW2" secondAttribute="bottom" constant="209" id="A0O-Se-dtY"/>
+                                    <constraint firstItem="UTA-EH-fd1" firstAttribute="top" secondItem="FDt-5M-Ls3" secondAttribute="top" id="Gdp-27-sD3"/>
+                                    <constraint firstAttribute="bottom" secondItem="U6S-QY-wKi" secondAttribute="bottom" constant="29" id="SSI-H9-Wug"/>
+                                    <constraint firstAttribute="trailing" secondItem="OfT-9Z-TW2" secondAttribute="trailing" id="UVe-QG-SpO"/>
+                                    <constraint firstItem="U6S-QY-wKi" firstAttribute="centerX" secondItem="FDt-5M-Ls3" secondAttribute="centerX" id="bmn-jk-PL1"/>
+                                    <constraint firstItem="OfT-9Z-TW2" firstAttribute="centerY" secondItem="FDt-5M-Ls3" secondAttribute="centerY" id="hUr-Vs-eKc"/>
+                                    <constraint firstItem="UTA-EH-fd1" firstAttribute="centerX" secondItem="FDt-5M-Ls3" secondAttribute="centerX" id="mxl-yy-gyP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mgt-kC-Wr1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2E0-K1-55Y"/>
+                            <constraint firstItem="Mgt-kC-Wr1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8a0-iN-7Y2"/>
+                            <constraint firstItem="FDt-5M-Ls3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MQE-fF-eWo"/>
+                            <constraint firstItem="FDt-5M-Ls3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OdZ-cW-kyZ"/>
+                            <constraint firstItem="Mgt-kC-Wr1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PmX-T9-G0v"/>
+                            <constraint firstItem="Mgt-kC-Wr1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rhv-XZ-EYO"/>
+                            <constraint firstItem="FDt-5M-Ls3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="as4-nQ-mMM"/>
+                            <constraint firstItem="FDt-5M-Ls3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="veP-jF-IrY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="HorizontalScrollView" destination="OfT-9Z-TW2" id="bqR-lX-j7X"/>
+                        <outlet property="VerticalScrollView" destination="FDt-5M-Ls3" id="4SY-MK-lre"/>
+                        <segue destination="RYG-7e-gr6" kind="show" identifier="ToActionPendingView" id="ZDv-sa-Ab6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Reward View Controller-->
+        <scene sceneID="r9A-XW-jdw">
+            <objects>
+                <viewController id="RYG-7e-gr6" customClass="RewardViewController" customModule="CharismaOnCommand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gc-UA-q4h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People_Talking" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-Rd-i74">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-2S-0ya">
+                                <rect key="frame" x="57" y="62" width="261.5" height="57"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qPT-Rd-i74" firstAttribute="top" secondItem="6gc-UA-q4h" secondAttribute="top" id="9uc-p0-i0i"/>
+                            <constraint firstItem="qPT-Rd-i74" firstAttribute="bottom" secondItem="eGF-7v-tnp" secondAttribute="bottom" id="MXM-13-6Xe"/>
+                            <constraint firstItem="eGF-7v-tnp" firstAttribute="bottom" secondItem="LfP-2S-0ya" secondAttribute="bottom" constant="548" id="cjQ-vc-WKr"/>
+                            <constraint firstItem="qPT-Rd-i74" firstAttribute="centerX" secondItem="LfP-2S-0ya" secondAttribute="centerX" id="lKL-y5-R0A"/>
+                            <constraint firstItem="qPT-Rd-i74" firstAttribute="leading" secondItem="6gc-UA-q4h" secondAttribute="leading" id="oO1-Tp-yhu"/>
+                            <constraint firstAttribute="trailing" secondItem="qPT-Rd-i74" secondAttribute="trailing" id="sle-ok-5Iy"/>
+                            <constraint firstItem="LfP-2S-0ya" firstAttribute="top" secondItem="eGF-7v-tnp" secondAttribute="top" constant="42" id="xM4-Pl-PiW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eGF-7v-tnp"/>
+                    </view>
+                    <connections>
+                        <segue destination="IGf-CI-tPV" kind="show" identifier="ReturnToMainView" id="apR-Mf-Fh9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtp-LL-FAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CharismaOnCommandLogo" width="215" height="56"/>
+        <image name="Envelope" width="280" height="212"/>
+        <image name="Exit Icon" width="100" height="100"/>
+        <image name="People_Talking" width="700" height="467"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="M6C-0R-I2L"/>
+        <segue reference="apR-Mf-Fh9"/>
+    </inferredMetricsTieBreakers>
 </document>

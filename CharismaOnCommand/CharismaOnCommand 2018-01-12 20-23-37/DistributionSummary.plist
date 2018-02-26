@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CharismaOnCommand.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>9D2F59A13E51C4BABBF41A2AF194C01AB5259FC3</string>
+				<key>dateExpires</key>
+				<string>31/08/2018</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>YZD8KEFM8T.com.GingerTech.CharismaOnCommand</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>YZD8KEFM8T</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>YZD8KEFM8T.com.GingerTech.CharismaOnCommand</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>CharismaOnCommand.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>93194bf5-be6d-48f8-8bc6-f2dc104d26c5</string>
+				<key>name</key>
+				<string>Charisma On Command Experiment</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>YZD8KEFM8T</string>
+				<key>name</key>
+				<string>Oliver Morland</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
